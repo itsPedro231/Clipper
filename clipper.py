@@ -12,9 +12,9 @@ def clipper(PATH, clip_length):
   clipCounter = 1
 
   for time1 in range(clip_length, duration+1, clip_length):
-    target = "C:/Users/pedro/OneDrive/Documentos/Codes/yt/clips/V{}.mp4".format(clipCounter)
+    target = "PATH/FILENAME{}.mp4".format(clipCounter)
     ffmpeg_extract_subclip(PATH, time0, time1, targetname = target)
     time0 = time1
     clipCounter += 1
 
-clipper(PATH="C:/Users/pedro/OneDrive/Documentos/Codes/yt/video1.mp4", clip_length=5)
+clipper(PATH="PATH TO VIDEO", clip_length=5)
